@@ -1,0 +1,115 @@
+html,body {margin: 0;padding:0;min-width: 1200px;}
+body {
+    font-family: tahoma,arial,'Hiragino Sans GB','微软雅黑',sans-serif;
+    color: #6f7b91;
+    font-size: 14px;
+    position: relative;
+    min-width: 1200px;
+    background-color: #eeeeee;
+}
+header{
+    position:relative;
+}
+.backimg img{
+    width: 100%;
+}
+.logo {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -110px;
+    margin-top: -110px;
+}
+.logo img{
+    width: 100%;
+}
+.menu{
+
+    text-align: center;
+    font-size: 12pt;
+    color: #808080;
+    height: 70px;
+    line-height: 70px;
+}
+.menu .focus{
+    color: #00B7FF;
+    border-bottom: solid 4px #a47e3c;
+}
+a {
+    text-decoration: none;
+}
+.menu a {
+    padding-bottom: 10px;
+    color: #808080;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.menu a:hover {
+    color: #00B7FF;
+    border-bottom: solid 4px #a47e3c;
+}
+main{
+    width: 1200px;
+    margin: 0 auto;
+}
+.mainLeft{
+    width: 800px;
+    float: left;
+}
+.mainRight{
+    width: 360px;
+    float: right;
+}
+.listBox{
+    padding: 20px 0;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+.listBox h1{
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 30px;
+    padding-bottom: 20px;
+    word-break: break-all;
+}
+.mainLeft h1{
+    text-align: center;
+}
+.colDefault{
+    text-align: center;
+}
+.colInfo{
+    color: #006dcc;
+}
+.mainLeft dfn p{
+    margin: 30px 40px;
+}
+.mainLeft a{
+    margin: 30px 40px;
+    color: #006dcc;
+}
+
+.rightBox{
+    background: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.rightBox .title{
+    border-bottom: 1px solid;
+}
+.rightBox .line{
+    margin: 20px 0;
+}
+.pagination{
+    list-style: none;
+    text-align: center;
+}
+.pagination li{
+    display: inline-block;
+}
+.textCenter{
+    text-align: center;
+}
