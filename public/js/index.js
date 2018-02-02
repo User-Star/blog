@@ -4,8 +4,6 @@
 $(function(){
     var $loginBox=$("#loginBox");
     var $registerBox=$("#registerBox");
-    var $userInfo=$("#userInfo");
-
     //切换注册
     $loginBox.find("a.colMint").on("click",function(){
         $registerBox.show();
@@ -78,4 +76,6 @@ $(function(){
         });
 
     });
+
+
 });

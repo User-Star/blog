@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博客</title>
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="/public/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/public/css/bootstrap-theme.min.css"/>
+
+    <script type="text/javascript" src="/public/js/jquery3.2.1.min.js"></script>
+    <script type="text/javascript" src="/public/js/bootstrap3.3.7.min.js"></script>
+    <script src="/public/js/index.js"></script>
+</head>
+<body>
+<header>
+    <div class="backimg"><img src="/public/images/bannerBg.png"></div>
+    <div class="logo"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImcxIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNjAzODEzIiBzdG9wLW9wYWNpdHk9IjEiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiMjlmOTQiIHN0b3Atb3BhY2l0eT0iMSI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PHN5bWJvbCBpZD0iLS1jcm93ZHNkb20tLTU4NDBmN2NiLWMyYTEtNGYyYS05MzFjLWYwZGQ2MDZjZGI5OCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgdmlld0JveD0iMCAwIDEwMCAxMDAiPiA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCI+PC9yZWN0PiA8L3N5bWJvbD48c3ltYm9sIGlkPSItLWNyb3dkc2RvbS0tMWU1NTIzYzEyNDE5OGJlMmQxZGI5NWYxOTExZDY2NjgiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiIHZpZXdCb3g9Ii0yMjkgMzEgNTAwIDUwMCI+ICAgICA8dXNlIGlkPSJpY29uIiB4bGluazpocmVmPSIjLS1jcm93ZHNkb20tLTU2ZWZhZWQwLWUzYzQtNDYwMi05N2ExLWJmOWRjYTVhOGE3NCIgc3R5bGU9Im92ZXJmbG93OnZpc2libGU7ZmlsbDpyZ2IoMjU1LCAyNTUsIDI1NSk7c3Ryb2tlOnJnYigyNTUsIDI1NSwgMjU1KTtzdHJva2Utd2lkdGg6MDsiIHRyYW5zZm9ybT0ibWF0cml4KDEsIDAsIDAsIDEsIC00Ny45OTk5OTg4MDc5MDcxMDQsIDE2Ni4wMDAwMDExOTIwOTI5KSIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIxNDAiPjwvdXNlPjx1c2UgaWQ9ImhlYWRlciIgeGxpbms6aHJlZj0iI2VhODA1OWMyLTM5YjItNGNhMy1hNjdkLWJlYmE2NjgyOGRkNyIgc3R5bGU9Im92ZXJmbG93OnZpc2libGU7ZmlsbDpyZ2IoMjU1LCAyNTUsIDI1NSk7c3Ryb2tlOnJnYigyNTUsIDI1NSwgMjU1KTtzdHJva2Utd2lkdGg6MDsiIHRyYW5zZm9ybT0ibWF0cml4KDEsIDAsIDAsIDEsIC05MS41LCAzMjIpIiB3aWR0aD0iMjI1IiBoZWlnaHQ9IjUwIj48L3VzZT48L3N5bWJvbD48c3ltYm9sIGlkPSItLWNyb3dkc2RvbS0tNTZlZmFlZDAtZTNjNC00NjAyLTk3YTEtYmY5ZGNhNWE4YTc0IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1heCIgdmlld0JveD0iMjU1LjExNDk5OTk5OTk5OTk4IDIuNDg0OTk5OTk5OTk5OTk2OCA3Mi4yNzAwMDAwMDAwMDAwNSA5NC45MyI+PHBhdGggZD0iTTI4OC4xLDE4LjZjMC44LTQuNywwLjctMTEuOC00LjQtMTEuOGMtMi4yLDAuMi0yLjIsMS45LTIuMiwyLjFjMC4xLDAuMywxLDMuOSwxLjIsNC41YzAuMywyLjEtMC40LDMuOC0wLjQsMy45IGMtMS40LDMuMS0zLjIsNS00LjIsOWMtMi43LDEwLjUsNy45LDEyLjMsNi41LDlDMjgwLjYsMjYuOSwyODcuMywyMy40LDI4OC4xLDE4LjZ6Ij48L3BhdGg+PHBhdGggZD0iTTI3MywxOS4xYzAuNi00LDAuNi0xMC4xLTMuOC0xMC4xYy0xLjksMC4yLTEuOSwxLjYtMS45LDEuOGMwLjEsMC4zLDAuOSwzLjMsMSwzLjljMC4zLDEuOC0wLjMsMy4yLTAuNCwzLjMgYy0xLjIsMi43LTIuNyw0LjMtMy42LDcuN2MtMi4zLDksNi44LDEwLjYsNS42LDcuN0MyNjYuNiwyNi4yLDI3Mi4zLDIzLjEsMjczLDE5LjF6Ij48L3BhdGg+PHBhdGggZD0iTTMwMS44LDE5LjFjMC42LTQsMC42LTEwLjEtMy44LTEwLjFjLTEuOSwwLjItMS45LDEuNi0xLjksMS44YzAuMSwwLjMsMC45LDMuMywxLDMuOWMwLjMsMS44LTAuMywzLjItMC40LDMuMyBjLTEuMiwyLjctMi43LDQuMy0zLjYsNy43Yy0yLjMsOSw2LjgsMTAuNiw1LjYsNy43QzI5NS41LDI2LjIsMzAxLjIsMjMuMSwzMDEuOCwxOS4xeiI+PC9wYXRoPjxwYXRoIGQ9Ik0zMDcuMSw0Ny4yaC0wLjN2LTIuNHYtMS4ydi0xLjFjMC0wLjktMC43LTEuNi0xLjYtMS42SDI2MGMtMC45LDAtMS42LDAuNy0xLjYsMS42djQ2LjNjMCwwLjksMC43LDEuNiwxLjYsMS42aDNsMC45LDIuNyBoMzcuM2wwLjktMi43aDNjMC45LDAsMS42LTAuNywxLjYtMS42di03LjVoMC4zYzkuNCwwLDE3LjEtNy43LDE3LjEtMTcuMVMzMTYuNSw0Ny4yLDMwNy4xLDQ3LjJ6IE0zMDcuMSw3My4zaC0wLjN2LTVWNTUuNGgwLjMgYzQuOSwwLDksNCw5LDlDMzE2LDY5LjMsMzEyLDczLjMsMzA3LjEsNzMuM3oiPjwvcGF0aD48L3N5bWJvbD48c3ltYm9sIGlkPSJlYTgwNTljMi0zOWIyLTRjYTMtYTY3ZC1iZWJhNjY4MjhkZDciIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWluIiB2aWV3Qm94PSIxLjY2IDIwLjczIDExMy4wNCAzMy4wMyI+PHBhdGggZD0iTTE4LjU4IDM4LjMxTDEyLjQ4IDM4LjMxTDEyLjQ4IDUwLjA1TDE3LjQxIDUwLjg4TDE2LjkyIDUzLjc2TDIuMTUgNTMuNzZMMS42NiA1MC44OEw1LjE1IDUwLjA1TDUuMTUgMjQuNDRMMS42NiAyMy42MUwyLjE1IDIwLjczTDI0Ljc4IDIwLjczTDI1LjM3IDI4LjU0TDIyLjM2IDI5LjA4TDIwLjM0IDI0LjM3TDEyLjQ4IDI0LjM3TDEyLjQ4IDM0LjY3TDE4LjU4IDM0LjY3TDE5LjQxIDMxLjkzTDIyLjI5IDMyLjQyTDIyLjI5IDQwLjU4TDE5LjQxIDQxLjA2TDE4LjU4IDM4LjMxWk0zMS42NCA1MC4wNUwzMS42NCAyNC40NEwyOC4xNSAyMy42MUwyOC42NCAyMC43M0w0Mi4yOSAyMC43M0w0Mi4yOSAyMC43M1E0Ny43OCAyMC43MyA1MC43OCAyMi45OUw1MC43OCAyMi45OUw1MC43OCAyMi45OVE1My43OCAyNS4yNCA1My43OCAyOS42Nkw1My43OCAyOS42Nkw1My43OCAyOS42NlE1My43OCAzMi41OSA1Mi4zOSAzNC42OEw1Mi4zOSAzNC42OEw1Mi4zOSAzNC42OFE1MS4wMCAzNi43NyA0OC4zMiAzOC4wNEw0OC4zMiAzOC4wNEw0OC4xNyAzOC41MEw1NC4zMiA1MC4wMkw1Ny4zMiA1MC44OEw1Ni44NCA1My43Nkw0OS4yOSA1My43Nkw0MS43MiAzOS4zM0wzOC45NiAzOS4zM0wzOC45NiA1MC4wNUw0Mi40MyA1MC44OEw0MS45NCA1My43NkwyOC42NCA1My43NkwyOC4xNSA1MC44OEwzMS42NCA1MC4wNVpNNDAuMjEgMjQuMzdMMzguOTYgMjQuMzdMMzguOTYgMzUuNjlMNDAuNzUgMzUuNjlMNDAuNzUgMzUuNjlRNDIuNDYgMzUuNjkgNDMuNzMgMzUuNTJMNDMuNzMgMzUuNTJMNDMuNzMgMzUuNTJRNDUuMDAgMzUuMzUgNDUuNzMgMzUuMDNMNDUuNzMgMzUuMDNMNDUuNzMgMzUuMDNRNDYuMDIgMzQuMDMgNDYuMTkgMzIuNzNMNDYuMTkgMzIuNzNMNDYuMTkgMzIuNzNRNDYuMzYgMzEuNDIgNDYuMzYgMzAuMTBMNDYuMzYgMzAuMTBMNDYuMzYgMzAuMTBRNDYuMzYgMjYuNzggNDQuODUgMjUuNTdMNDQuODUgMjUuNTdMNDQuODUgMjUuNTdRNDMuMzMgMjQuMzcgNDAuMjEgMjQuMzdMNDAuMjEgMjQuMzdaTTc3LjI1IDM4LjMxTDcwLjI0IDM4LjMxTDcwLjI0IDUwLjEyTDgwLjAzIDUwLjEyTDgyLjA2IDQ1LjQxTDg1LjMzIDQ1Ljk3TDg0Ljc0IDUzLjc2TDU5LjkxIDUzLjc2TDU5LjQyIDUwLjg4TDYyLjkyIDUwLjA1TDYyLjkyIDI0LjQ0TDU5LjQyIDIzLjYxTDU5LjkxIDIwLjczTDg0LjAxIDIwLjczTDg0LjU5IDI4LjU0TDgxLjM1IDI5LjA4TDc5LjMyIDI0LjM3TDcwLjI0IDI0LjM3TDcwLjI0IDM0LjY3TDc3LjI1IDM0LjY3TDc4LjA4IDMxLjkzTDgwLjk4IDMyLjQyTDgwLjk4IDQwLjU4TDc4LjA4IDQxLjA2TDc3LjI1IDM4LjMxWk0xMDYuNjIgMzguMzFMOTkuNjEgMzguMzFMOTkuNjEgNTAuMTJMMTA5LjQwIDUwLjEyTDExMS40MyA0NS40MUwxMTQuNzAgNDUuOTdMMTE0LjExIDUzLjc2TDg5LjI4IDUzLjc2TDg4Ljc5IDUwLjg4TDkyLjI5IDUwLjA1TDkyLjI5IDI0LjQ0TDg4Ljc5IDIzLjYxTDg5LjI4IDIwLjczTDExMy4zOCAyMC43M0wxMTMuOTYgMjguNTRMMTEwLjcyIDI5LjA4TDEwOC42OSAyNC4zN0w5OS42MSAyNC4zN0w5OS42MSAzNC42N0wxMDYuNjIgMzQuNjdMMTA3LjQ1IDMxLjkzTDExMC4zNSAzMi40MkwxMTAuMzUgNDAuNThMMTA3LjQ1IDQxLjA2TDEwNi42MiAzOC4zMVoiPjwvcGF0aD48L3N5bWJvbD48L2RlZnM+ICAgICA8dXNlIGlkPSJiYWNrZ3JvdW5kIiB4bGluazpocmVmPSIjLS1jcm93ZHNkb20tLTU4NDBmN2NiLWMyYTEtNGYyYS05MzFjLWYwZGQ2MDZjZGI5OCIgc3R5bGU9ImZpbGwtb3BhY2l0eTowOyIgd2lkdGg9IjEwMDAwMCIgaGVpZ2h0PSIyMDAwMCI+PC91c2U+PGc+PG1hc2sgaWQ9ImxvZ28tbWFzayIgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeD0iMCIgeT0iMCIgd2lkdGg9IjUwMCIgaGVpZ2h0PSI1MDAiPjx1c2UgeGxpbms6aHJlZj0iIy0tY3Jvd2RzZG9tLS0xZTU1MjNjMTI0MTk4YmUyZDFkYjk1ZjE5MTFkNjY2OCIgZmlsbD0icmdiKDI1NSwgMjU1LCAyNTUpIiB4PSIwIiB5PSIwIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCI+PC91c2U+PC9tYXNrPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBzdHlsZT0iZmlsbDp1cmwoI2cxKTtzdHJva2U6dXJsKCNnMSk7c3Ryb2tlLXdpZHRoOjA7IiBtYXNrPSJ1cmwoI2xvZ28tbWFzaykiPjwvcmVjdD48L2c+PC9zdmc+" alt=""></div>
+</header>
+
+<nav>
+    <div class="menu">
+        {%if where.category==""%}
+        <a href="/" class="focus">首页</a>
+        {%else%}
+        <a href="/">首页</a>
+        {%endif%}
+        {% for _category in categories %}
+        {%if where.category==_category._id%}
+        <a class="focus" href="/?category={{_category._id.toString()}}">{{_category.name}}</a>
+        {%else%}
+        <a href="/?category={{_category._id.toString()}}">{{_category.name}}</a>
+        {%endif%}
+        {% endfor %}
+    </div>
+</nav>
+
+<main class="clear">
+    <div class="mainLeft">
+        {%block content%}
+        {%endblock%}
+    </div>
+
+    <div class="mainRight">
+        {% if userInfo._id %}
+        <div class="rightBox" id="userInfo">
+            <div class="title"><span>用户信息</span></div>
+            <p><span class="colDark userName">{{userInfo.username}}</span></p>
+            {% if userInfo.isAdmin %}
+            <p>
+                <span class="colDanger info">你好，管理员！</span>
+                <a href="/admin">进入管理</a>
+            </p>
+            {% else %}
+            <p><span class="colDanger">你好，欢迎光临我的博客！</span></p>
+            {% endif %}
+            <p><span class="colDark logOut"><a href="javascript:;" id="logout">退出</a></span></p>
+        </div>
+        {% else  %}
+        <div class="rightBox" id="loginBox">
+            <div class="title"><span>登录</span></div>
+            <div class="line"><span class="colDark">用户名：</span><input type="text" name="username" /><em></em></div>
+            <div class="line"><span class="colDark">密码：</span><input type="password" name="password"><em></em></div>
+            <div class="line"><span class="colDark"></span>
+                <button>登 录</button>
+            </div>
+            <p class="textRight">还没注册？<a href="javascript:;" class="colMint">马上注册</a></p>
+            <p class="colWarning textCenter"></p>
+        </div>
+        {% endif %}
+        <div class="rightBox" id="registerBox" style="display: none;">
+            <div class="title"><span>注册</span></div>
+            <div class="line"><span class="colDark">用户名：</span><input type="text" name="username"></div>
+            <div class="line"><span class="colDark">密码：</span><input type="password" name="password"></div>
+            <div class="line"><span class="colDark">确认：</span><input type="password" name="respassword"></div>
+            <div class="line"><span class="colDark"></span>
+                <button>注 册</button>
+            </div>
+            <p class="textRight">已有账号？<a href="javascript:;" class="colMint">马上登录</a></p>
+            <p class="colWarning textCenter"></p>
+        </div>
+    </div>
+
+</main>
+
+<div class="copyright textCenter">Copyright 版权所有，翻版必究</div>
+
+</body>
+</html>

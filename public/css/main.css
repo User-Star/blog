@@ -7,6 +7,7 @@ body {
     min-width: 1200px;
     background-color: #eeeeee;
 }
+::-webkit-scrollbar {display:none}
 header{
     position:relative;
 }
