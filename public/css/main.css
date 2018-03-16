@@ -114,3 +114,7 @@ main{
 .textCenter{
     text-align: center;
 }
+
+.textLeft .em{
+    float:right;
+}

@@ -13,5 +13,24 @@
     <dfn><p>{{content.profile}}</p></dfn>
     <div><p>{{content.content}}</p></div>
 </div>
-
+<div class="list-box message">
+    <h3 class="textLeft"><strong>评论</strong><span class="em">一共有 <em id="messageCount">0</em>条评论</span></h3>
+    {%if userInfo._id%}
+    <p class="textLeft">admin</p>
+    <div class="col-lg">
+        <div class="input-group">
+            <textarea id="messageContent" class="form-control" rows="3"></textarea>
+            <input type="hidden" id="contentId" value="{{content._id.toString()}}"/>
+      <span class="input-group-btn">
+        <button style="line-height: 3;" id="messageBtn" class="btn  btn-primary btn-lg" type="button">Submit</button>
+      </span>
+        </div><!-- /input-group -->
+    </div>
+    {%else%}
+    <p class="bg-danger" style="line-height: 30px;">
+        你还没有登录，请先登录！
+    </p>
+    {%endif%}
+</div>
+<script src="/public/js/comment.js"></script>
 {%endblock%}

@@ -5,6 +5,7 @@ var express=require("express");
 //路由模块
 var router=express.Router();
 var user=require("../models/user");
+var content=require("../models/content");
 //统一返回格式
 var responseData;
 router.use(function(res,req,next){
@@ -121,4 +122,28 @@ router.get("/user/logout",function(req,res,next){
     req.cookies.set("userInfo",null);
     res.json(responseData);
 });
+
+//评论提交
+router.post("/comment/post",function(req,res,next){
+    var contentId=req.body.contentId||"";
+    var postData={
+        userId:req.userInfo._id,
+        username:req.userInfo.username,
+        postTime:new Date(),
+        _content:req.body.content
+    };
+    //查询当前内容信息
+    content.findOne({
+        _id:contentId
+    }).then(function(Content){
+        Content.comments.push(postData);
+        return Content.save();
+    }).then(function(newContent){
+        responseData.code=0;
+        responseData.message="评论提交成功！";
+        responseData.data=newContent;
+        res.json(responseData);
+    });
+});
+
 module.exports=router;
