@@ -145,5 +145,17 @@ router.post("/comment/post",function(req,res,next){
         res.json(responseData);
     });
 });
+//获取指定文章所有评论
+router.get("/comment",function(req,res,next){
+    var contentId=req.query.contentId||"";
+    content.findOne({
+        _id:contentId
+    }).then(function(Content){
+
+        responseData.code=0;
+        responseData.data=Content.comments;
+        res.json(responseData);
+    });
+});
 
 module.exports=router;

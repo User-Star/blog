@@ -3,28 +3,41 @@
 
 <div class="listBox">
     <h1>{{content.title}}</h1>
+
     <p class="colDefault">
         作者：<span class="colInfo">{{content.user.username}}</span>
         分类：<span class="colInfo">{{content.category.name}}</span>
         时间：<span class="colInfo">{{content.addTime|date("Y年m月d日 H:i:s",-8*60)}}</span>
         阅读：<span class="colInfo">{{content.views}}</span>
-        评论：<span class="colInfo">3</span>
+        评论：<span class="colInfo messageCount"></span>
     </p>
     <dfn><p>{{content.profile}}</p></dfn>
+
     <div><p>{{content.content}}</p></div>
 </div>
 <div class="list-box message">
-    <h3 class="textLeft"><strong>评论</strong><span class="em">一共有 <em id="messageCount">0</em>条评论</span></h3>
+    <h3 class="textLeft"><strong>评论</strong><span class="em">一共有 <em class="messageCount">0</em>条评论</span></h3>
     {%if userInfo._id%}
     <p class="textLeft">admin</p>
+
     <div class="col-lg">
         <div class="input-group">
             <textarea id="messageContent" class="form-control" rows="3"></textarea>
             <input type="hidden" id="contentId" value="{{content._id.toString()}}"/>
-      <span class="input-group-btn">
-        <button style="line-height: 3;" id="messageBtn" class="btn  btn-primary btn-lg" type="button">Submit</button>
-      </span>
-        </div><!-- /input-group -->
+            <span class="input-group-btn">
+                <button style="line-height: 3;" id="messageBtn" class="btn  btn-primary btn-lg" type="button">Submit
+                </button>
+            </span>
+        </div>
+        <div class="comment-list">
+           <!-- <div class="panel panel-default">
+                <div class="panel-heading"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></div>
+                <div class="panel-body">
+                    <p>还没有留言</p>
+                </div>
+            </div>-->
+
+        </div>
     </div>
     {%else%}
     <p class="bg-danger" style="line-height: 30px;">
